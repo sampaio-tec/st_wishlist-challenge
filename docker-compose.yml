@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: pass2022!
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./docker/volumes:/data/db
+
+  wishalist-challenge:
+    container_name: wishlist-challenge
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: wishlist-challenge:latest
+    environment:
+      SPRING_DATA_MONGODB_HOST: mongo
+      SPRING_DATA_MONGODB_DATABASE: db_freedom
+      SPRING_DATA_MONGODB_USERNAME: root
+      SPRING_DATA_MONGODB_PASSWORD: pass2022!
+    depends_on:
+      - mongo
+    ports:
+      - "8080:8080"
