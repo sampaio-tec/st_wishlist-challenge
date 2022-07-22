@@ -68,13 +68,14 @@ Para realizar o desenvolvimento inicial do serviço, foi utilizado Java 18 com S
 # Recursos utilizados:
 
 A seguir são listados os principais recursos adicionados utilizados no serviço:
-2. Lombok (https://projectlombok.org/) - biblioteca Java que cria automaticamente alguns recursos para manipular objetos;
-3. MongoDB (https://www.postgresql.org/) - sistema de gerenciamento de banco de dados relacional que persiste os dados processados pelo serviço;
-4. Hibernate (https://hibernate.org/) - framework para mapeamento objeto-relacional responsável por mapear os modelos de dados do serviço com as tabelas do PostgreSQL;
-5. JUnit 5 (https://junit.org/junit5/) - framework utilizado para realizar testes unitários e integrados. 
-6. Mockito (https://site.mockito.org/) - estrutura de teste que permite a criação de objetos duplos de teste em testes de unidade automatizados;
-7. JoCoCo (https://www.eclemma.org/jacoco/) - biblioteca de cobertura de códigos;
-8. Swagger (https://swagger.io/) - framework composto por diversas ferramentas que auxilia a descrição, consumo e visualização de serviços de uma API REST.
+
+1. Lombok (https://projectlombok.org/) - biblioteca Java que cria automaticamente alguns recursos para manipular objetos;
+2. MongoDB (https://www.postgresql.org/) - sistema de gerenciamento de banco de dados relacional que persiste os dados processados pelo serviço;
+3. Hibernate (https://hibernate.org/) - framework para mapeamento objeto-relacional responsável por mapear os modelos de dados do serviço com as tabelas do PostgreSQL;
+4. JUnit 5 (https://junit.org/junit5/) - framework utilizado para realizar testes unitários e integrados. 
+5. Mockito (https://site.mockito.org/) - estrutura de teste que permite a criação de objetos duplos de teste em testes de unidade automatizados;
+6. JoCoCo (https://www.eclemma.org/jacoco/) - biblioteca de cobertura de códigos;
+7. Swagger (https://swagger.io/) - framework composto por diversas ferramentas que auxilia a descrição, consumo e visualização de serviços de uma API REST.
 
 
 # Testes
